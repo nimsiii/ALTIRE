@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTIRE - Fashion Brand</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header id="navbar">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('shop')">Shop</a></li>
+                <li><a href="#" onclick="showSection('about')">About</a></li>
+                <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+                <li class="cart">
+                    <a href="#" id="cart-icon">🛒 <span id="cart-count">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section with Background Image -->
+    <div id="home" class="section active">
+        <section class="hero">
+            <div class="overlay"></div>
+            <!-- Replacing ALTIRE text with the logo -->
+            <img src="images/logo.png" alt="ALTIRE Logo" class="brand-logo">
+            <p class="tagline">Define Your Style, Elevate Your Look.</p>
+            <a href="#" onclick="showSection('shop')" class="hero-btn">Shop Now</a>
+        </section>
+    </div>
+
+    <!-- Shop Section -->
+    <div id="shop" class="section" style="display: none;">
+        <section class="products">
+            <h2>Our Collection</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="images/shirt.jpg" alt="Shirt">
+                    <h3>Trendy Shirt</h3>
+                    <p>$25.99</p>
+                    <button class="add-to-cart" data-name="Trendy Shirt" data-price="25.99">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/jeans.jpg" alt="Jeans">
+                    <h3>Stylish Jeans</h3>
+                    <p>$39.99</p>
+                    <button class="add-to-cart" data-name="Stylish Jeans" data-price="39.99">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="section" style="display: none;">
+        <section class="about">
+            <h2>About ALTIRE</h2>
+            <p>Welcome to ALTIRE, where style meets comfort. We bring you the latest trends with a touch of elegance.</p>
+            <p>Our collection is designed to make you look and feel your best. Explore our range and redefine your fashion statement.</p>
+        </section>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section" style="display: none;">
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <p>Email: support@altire.com</p>
+            <p>Phone: +123 456 789</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ALTIRE. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
